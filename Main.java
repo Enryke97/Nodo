@@ -14,16 +14,15 @@ public class Main
      
         String Inser="";
         
-        while(!Inser.equals("8")){
+        while(!Inser.equals("7")){
             System.out.println("Menu ");
             System.out.println("1 Insertar");
             System.out.println("2 Mostrar");
             System.out.println("3 Buscar");
             System.out.println("4 Eliminar");
-            System.out.println("5 Contar");
-            System.out.println("6 Minimo");
-            System.out.println("7 Maximo");
-            System.out.println("8 Terminar");
+            System.out.println("5 Minimo");
+            System.out.println("6 Maximo");
+            System.out.println("7 Terminar");
 
             Scanner sc= new Scanner(System.in);
             System.out.println("Elije la opcion ");
@@ -49,15 +48,12 @@ public class Main
                 p.pop();
                 break;
                 case "5":
-                
+                p.Minimo();
                 break;
                 case "6":
                 
                 break;
                 case "7":
-                
-                break;
-                case "8":
                 System.out.println(Inser);
                 break;
                 default:

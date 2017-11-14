@@ -51,4 +51,19 @@ public class Pilas
         else
           System.out.println("La pila esta vacia");
         }
+    public void Minimo(){
+       Nodo temp=top;
+       int Min=temp.getValor();
+       if(temp!=null){
+           while(temp!=null){
+               if(Min>temp.getValor()){
+                   Min=temp.getValor();
+                }
+             temp=temp.getProx();
+            }
+         System.out.println("El minimo es:"+Min);
+        }else{
+            System.out.println("La pila esta vacia");
+        }
+    }
 }
